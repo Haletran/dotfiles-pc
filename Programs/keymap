@@ -1,0 +1,7 @@
+printf "fr\nus\n" | dmenu -i -p "Layout:" | while read cmd; do
+  case $cmd in
+    fr) setxkbmap fr ;;
+    us) setxkbmap us ;;
+  esac
+done
+wq

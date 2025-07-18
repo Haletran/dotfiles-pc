@@ -1,0 +1,8 @@
+printf "Shutdown\nReboot\nLock\nLogout" | dmenu -i -p "System:" | while read cmd; do
+  case $cmd in
+    Shutdown) /sbin/shutdown now ;;
+    Reboot) systemctl reboot ;;
+    Lock) slock ;;
+    Logout) killall dwm ;;
+  esac
+done

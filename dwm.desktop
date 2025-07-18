@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=dwm
+Comment=dwm made beautiful 
+Exec=/home/bapasqui/Programs/run.sh 
+Type=Application 
